@@ -26,7 +26,7 @@ pipeline {
     }
         post {
          always {
-          mail to: 'debian@localhost.com',
+          mail to: 'debian@novalocal',
           subject: "Status of pipeline: ${currentBuild.fullDisplayName}",
           body: "${env.BUILD_URL} has result ${currentBuild.result}"
         }
