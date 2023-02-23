@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Install') {
             steps {
-                sh 'apt-get update && apt-get install -y aspell-es ' 
+                sh 'apt-get updte && apt-get install -y aspell-es ' 
             }
         }
         stage('Test')
@@ -31,4 +31,4 @@ pipeline {
           body: "${env.BUILD_URL} has result ${currentBuild.result}"
         }
       }
-
+}
