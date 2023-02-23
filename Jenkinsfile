@@ -24,7 +24,6 @@ pipeline {
             }
         }
     }
-}
         post {
          always {
           mail to: 'debian@localhost.com',
